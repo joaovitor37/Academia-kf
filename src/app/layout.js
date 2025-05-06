@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,7 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <header> 
+          <h1><img src = "tcc - gladiadores.jpeg" height={50} width={50}/>ACADEMIA GLADIADORES <a href="https://www.google.com/?hl=pt-BR">| Pagina inicial</a> <a href="https://www.google.com/?hl=pt-BR" >| Agenda</a> <a href="https://www.google.com/?hl=pt-BR">| Treino</a> <a href="https://www.google.com/?hl=pt-BR">| Mensalidade</a></h1> 
+        
+        
+        </header>{children}
       </body>
     </html>
   );
