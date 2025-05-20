@@ -12,7 +12,18 @@
 header {
   background-color: #000000;
   word-spacing: 3px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  padding: 5px;
+  box-sizing: border-box;
 }
+.espacamento-h1 {
+  display: flex;
+  align-items: center;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -43,4 +54,16 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.divespacamentodelinhas {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(153, 179, 179);
+  font-size: 28px;
+  border-radius: 10px;
 }
