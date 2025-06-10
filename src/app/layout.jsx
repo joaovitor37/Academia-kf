@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             <a className="espaçamento" href="https://www.google.com/?hl=pt-BR" style = {{color: 'gray'}}>Mensalidade</a>
             <button type="submit">log out</button>
         
-            </div>
+            </div> 
         </header>{children}
       </body>
     </html>

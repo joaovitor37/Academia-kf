@@ -1,0 +1,39 @@
+.container{
+  height:900px;
+}
+.content {
+  display: flex;
+  align-items: center;  /* centraliza verticalmente texto e imagem */
+  justify-content: space-between; /* espaço entre os dois lados */
+  padding: 50px;
+  gap: 10px; /* espaçamento entre os blocos */
+  font-size: 30px;
+}
+
+/* Controle a largura do texto e da imagem para não ficarem esticados demais */
+.left {
+  flex: 20; /* ocupa espaço proporcional */
+  max-width: 50%; /* opcional pra limitar */
+}
+
+.right {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Remova float da imagem */
+.centroimg {
+  width: 100%;  /* pra imagem ocupar todo o container direito */
+  height: auto; /* manter proporção */
+  /* float: right; <- remover */
+  display: block; /* para evitar espaçamento em imagens inline */
+}
+
+.centroh2 {
+  font-size: 55px;
+}
+
+.centrop {
+  font-size: 35px;
+  color: gray;
+}
